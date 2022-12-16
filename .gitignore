@@ -1,0 +1,17 @@
+### IDEA ###
+/.idea/
+**/__pycache__/
+*.iml
+*/target
+*/*.iml
+*/*.pyc
+.settings/
+.project
+*/.classpath
+*/.factorypath
+target
+*.log
+.DS_Store
+Thumbs.db
+*.ini
+app.jar

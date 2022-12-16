@@ -1,0 +1,445 @@
+.inputGroupButton {
+    transition: 0.2s;
+}
+
+.inputGroupButton:hover {
+    background: blue;
+    color: white;
+}
+
+.appSelector {
+    width: 100%;
+    height: 170px;
+    overflow: scroll;
+    border: 1px solid #B6B9BE;
+
+}
+
+.appSelector::-webkit-scrollbar {
+    width: 10px;
+    height: 0px;
+}
+
+.appSelector::-webkit-scrollbar-thumb {
+    background: #d2d2d2;
+    border-radius: 5px;
+}
+
+.appSelector::-webkit-scrollbar-track {
+    background: #ebebeb;
+}
+
+.appSelector::-webkit-scrollbar-corner {
+    background: #d7d7d7;
+}
+
+.appSelectorApp {
+    float: left;
+    margin: 5px;
+    width: 100px;
+    height: 120px;
+    border: 1px solid #A6A9AE;
+    border-radius: 10px;
+    background: #fff;
+    overflow: hidden;
+    transition: 0.2s;
+    text-align: center;
+}
+
+.appSelectorApp:hover {
+    border: 1px solid #0d40e0;
+    background: #f0f0f0;
+
+}
+
+.appSelectorApp:hover .appSelectorPkg {
+    background: #fff;
+    z-index: 2;
+
+}
+
+.appSelectorIcon {
+
+    width: 64px;
+    height: 64px;
+    margin: 3px auto;
+    text-align: center;
+    background-size: contain;
+}
+
+.appSelectorName {
+    width: 90px;
+    margin: 2px;
+    height: 20px;
+    overflow: hidden;
+    font-size: 13px;
+    color: #555;
+    text-align: center;
+    font-weight: bold;
+
+
+}
+
+.appSelectorPkg {
+    width: 100%;
+    height: 30px;
+    color: #555;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.appSelectorPkgName {
+    text-indent: 5px;
+    float: left;
+    height: 20px;
+    font-size: 10px !important;
+    color: #555;
+    overflow: hidden;
+}
+
+.loadingPic {
+    background: url(../images/logo3.png);
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    margin: 0 auto;
+    animation: loadingPic 1s infinite linear;
+    filter: brightness(70%);
+}
+
+@keyframes loadingPic {
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+#inputweb {
+    background: #0A160A;
+}
+
+.row-hover:hover {
+    filter: brightness(95%);
+}
+
+.goodsSelectorApp {
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    width: 97%;
+    float: left;
+    background: white;
+}
+
+.goodsSelectorApp:hover {
+    border: 1px solid blue;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.goodsSelectorName {
+    height: auto;
+}
+
+.goodsSelectorPkg {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
+p.goodsSelectorPkgName {
+    text-align: right;
+    font-size: 1em;
+    height: 100%;
+    margin-bottom: 0px;
+    line-height: 100%;
+}
+
+
+.tip-message-wrap {
+    position: fixed;
+    text-align: center;
+    top: 30%;
+    left: 0;
+    z-index: 99999999;
+    width: 100%;
+}
+
+.tip-message {
+    -webkit-animation-name: fadeInAndFadeOut;
+    animation-name: fadeInAndFadeOut;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    pointer-events: none;
+    margin: 0 auto;
+    font-size: 13px;
+    color: white;
+    border-radius: 3px;
+    line-height: 2;
+    padding: 8px 30px;
+    background-color: rgba(0, 0, 0, .7);
+    display: inline-block;
+}
+
+@keyframes fadeInAndFadeOut {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+    }
+    80% {
+        opacity: 1;
+        /*transform: scale(1.1);*/
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInAndFadeOut {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+    }
+    80% {
+        opacity: 1;
+        /*transform: scale(1.1);*/
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.newstitle {
+    height: 40px;
+    width: 100%;
+    font-size: 1.35em;
+    line-height: 40px;
+    border-bottom: 1px solid #ddd
+}
+
+.newstitle i {
+    font-style: normal;
+    font-size: 14px;
+    text-shadow: none;
+    font-weight: normal;
+    float: right
+}
+
+.latnewslist {
+    padding: 9px 0 0
+}
+
+.pidiv .latnewslist {
+    min-height: 140px
+}
+
+.latnewslist h3 {
+    font-weight: normal;
+    margin-bottom: 8px
+}
+
+.latnewslist a, .tese a {
+    color: #333
+}
+
+.latnewslist a:hover, .tese a:hover {
+    color: var(--brandColor)
+}
+
+.mainlatest .latnewslist .entry {
+    line-height: 18px
+}
+
+.latnewslist .entry {
+    line-height: 23px;
+    font-size: 13px;
+    color: #777
+}
+
+.latnewslist .entry a {
+    height: 18px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.entry img {
+    width: 100%;
+    min-height: 70px
+}
+
+.picbox {
+    width: 130px;
+    height: 70px;
+    margin: 0 10px 10px 0;
+    float: left;
+    overflow: hidden;
+    display: block
+}
+
+.newstail span {
+    margin-right: 15px;
+    color: #444
+}
+
+.newstail {
+    margin-top: 5px;
+    color: #999;
+    font-size: 12px;
+    border-bottom: 1px dashed #ddd;
+    padding: 0 0 5px;
+    clear: both
+}
+
+.newstail a {
+    color: #169283
+}
+
+.newstail .updated, .c-gray {
+    margin-right: 0;
+    color: #999;
+    font-weight: 100;
+}
+
+.newstail .updated b {
+    font-weight: normal;
+    color: #444
+}
+
+.newscon ul {
+    margin: 15px 0;
+    height: 280px;
+    overflow: hidden
+}
+
+.newscon li {
+    list-style: disc inside;
+    padding: 9px 0;
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+#paginationtech {
+    line-height: 40px;
+    color: #26999e;
+}
+
+.newsplink {
+    margin-top: 10px;
+    clear: both
+}
+
+.newsplink label {
+    color: #333;
+    background: #f5f5f5;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #d7d7d7;
+    margin: 3px;
+    border-radius: 2px
+}
+
+.newsplink .px {
+    border: 1px solid #ccc;
+    -moz-box-shadow: inset 1px 1px 2px rgba(0, 0, 0, .1);
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, .1);
+    border-radius: 3px;
+    width: 30px;
+    padding: 3px
+}
+
+.newsplink a {
+    color: #333;
+    background: #f5f5f5;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #d7d7d7;
+    margin: 3px;
+    border-radius: 2px
+}
+
+.latnewslist .entry a {
+    height: 32px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.news-brief {
+    display: block;
+}
+
+.activeee {
+    color: #2354e6;
+    background: #fff;
+    padding: 2px 7px;
+    border: 1px solid #2354e6;
+    margin: 3px;
+    border-radius: 2px;
+    font-size: 12px;
+}
+
+.newsplink {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    clear: both
+}
+
+.newsplink label {
+    color: #333;
+    background: #f5f5f5;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #d7d7d7;
+    margin: 3px;
+    border-radius: 2px
+}
+
+.newsplink .px {
+    border: 1px solid #ccc;
+    -moz-box-shadow: inset 1px 1px 2px rgba(0, 0, 0, .1);
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, .1);
+    border-radius: 3px;
+    width: 30px;
+    padding: 3px
+}
+
+.newsplink a {
+    color: #333;
+    background: #f5f5f5;
+    text-decoration: none;
+    padding: 2px 7px;
+    border: 1px solid #d7d7d7;
+    margin: 3px;
+    border-radius: 2px;
+    font-size: 12px;
+}
+
+.newsplink a:hover {
+    color: #2354e6;
+    background: #fcfcfc
+}
